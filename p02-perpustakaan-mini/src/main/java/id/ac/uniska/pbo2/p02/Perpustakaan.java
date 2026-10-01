@@ -32,6 +32,18 @@ public class Perpustakaan {
         }
         return null;
     }
+    
+    public List<Koleksi> cariJudul(String kataKunci) {
+        List<Koleksi> hasil = new ArrayList<>();
+        String keyword = kataKunci.toLowerCase(); 
+
+        for (Koleksi k : daftarKoleksi) {
+            if (k.getJudul().toLowerCase().contains(keyword)) {
+                hasil.add(k);
+            }
+        }
+        return hasil;
+    }
 
     /** Meminjamkan koleksi kepada anggota. Mengembalikan false jika gagal. */
     public boolean pinjam(String kode, Anggota anggota) {

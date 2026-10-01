@@ -4,6 +4,8 @@
  */
 package id.ac.uniska.pbo2.p02;
 
+import java.util.List; // Tambahkan import List untuk pencarian
+
 /**
  *
  * @author ASUS
@@ -19,7 +21,9 @@ public class AplikasiPerpustakaan {
         perpus.tambah(new Buku("B001", "Laskar Pelangi", 2005, "Andrea Hirata"));
         perpus.tambah(new Buku("B002", "Clean Code", 2008, "Robert C. Martin"));
         perpus.tambah(new Majalah("M001", "Majalah Teknologi Kita", 2026, "Agustus"));
-        perpus.tambah (new Buku("B009", "", 2020, "Anonim"));
+        
+        // --- TAMBAHAN: Menambahkan data Skripsi ---
+        perpus.tambah(new Skripsi("S001", "Sistem Pendukung Keputusan", 2023, "Siti Rahmah", "Teknik Informatika"));
 
         Anggota siti = new Anggota("2410010123", "Siti Rahmah");
         Anggota budi = new Anggota("2410010456", "Budi Santoso");
@@ -37,10 +41,23 @@ public class AplikasiPerpustakaan {
         cetakKembali(perpus, "M001", 3);
 
         System.out.println();
+        
+        // --- TAMBAHAN: Uji Fitur Pencarian Judul ---
+       List<Koleksi> hasilPencarian = perpus.cariJudul("code");
+        System.out.println("Hasil pencarian \"code\": " + hasilPencarian.size() + " koleksi");
+        for (Koleksi k : hasilPencarian) {
+            System.out.println(k); // Menggunakan toString() agar langsung sesuai dengan format perpustakaan
+        }
+
+        System.out.println();
+
+        // --- TAMBAHAN: Uji Coba Peminjaman Skripsi (Siti Rahmah meminjam S001) ---
+        cetakPinjam(perpus, "S001", siti);
+
+        System.out.println();
         System.out.println("Koleksi tersedia: " + perpus.jumlahTersedia()
             + " dari " + perpus.getDaftarKoleksi().size());
     }
-    
     
     private static void tampilkanDaftar(Perpustakaan perpus) {
         System.out.println("=== Daftar Koleksi ===");
@@ -60,4 +77,4 @@ public class AplikasiPerpustakaan {
         System.out.println("Pengembalian " + kode + " terlambat " + hariTerlambat
             + " hari, denda Rp" + denda);
     }
- }
+}
