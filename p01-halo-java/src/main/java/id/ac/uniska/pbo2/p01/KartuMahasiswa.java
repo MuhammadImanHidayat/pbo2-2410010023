@@ -13,12 +13,12 @@ public class KartuMahasiswa {
     public static void main(String[] args) {
         // Deklarasi variabel dengan tipe data yang sesuai
         String nama = "Muhammad Iman Hidayat";
-        String npm = "2410010023"; // Sesuaikan NPM Anda
+        String npm = "2410010023"; 
         String prodi = "Teknik Informatika";
         int semester = 5;
         String alasan = "Ingin memperdalam pemrograman berbasis objek dan pengembangan aplikasi";
 
-        // Menampilkan output sesuai format contoh
+        
         System.out.println("========================================");
         System.out.println(" KARTU MAHASISWA PBO 2");
         System.out.println("========================================");
