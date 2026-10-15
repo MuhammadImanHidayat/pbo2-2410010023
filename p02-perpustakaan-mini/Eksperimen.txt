@@ -1,0 +1,11 @@
+Eksperimen
+
+1. id/ac/uniska/pbo2/p02/AplikasiPerpustakaan.java:[43,17] id.ac.uniska.pbo2.p02.Koleksi is abstract; cannot be instantiated
+karena kelas Koleksi berfungsi sebagai kerangka dasar (template) induk yang diturunkan, sehingga objek hanya boleh dibuat dari kelas turunannya (seperti Buku atau Skripsi).
+
+2. Jika anotasi @Override ada: Kompiler akan langsung memunculkan error (gagal dikompilasi).
+Jika anotasi @Override dihapus: Kode bisa jadi bisa dikompilasi, tetapi method tersebut tidak lagi menimpa (override) method induknya, melainkan berdiri sendiri sebagai method baru di kelas Buku.
+
+3. constructor Buku in class Buku cannot be applied to given types
+
+4. Hal ini melanggar prinsip pemograman berorientasi objek (PBO) yaitu Enkapsulasi / Penyembunyian Informasi.
