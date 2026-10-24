@@ -341,6 +341,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         tombolPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 8, 0));
 
         batalButton.setText("Batal");
+        batalButton.addActionListener(this::batalButtonActionPerformed);
         tombolPanel.add(batalButton);
 
         daftarButton.setText("Daftar");
@@ -366,6 +367,10 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     private void dosenRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosenRadioButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_dosenRadioButtonActionPerformed
+
+    private void batalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_batalButtonActionPerformed
 
     /**
      * @param args the command line arguments
