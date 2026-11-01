@@ -1,18 +1,18 @@
 # Tugas 6 - Validasi Input dan Kegunaan
 
 ## 1. Lembar Peer Review
-*(Lampirkan foto atau scan lembar peer review dari teman di sini)*
+![Lembar Peer Review Heuristik 1](images/heuristik1.png)
+![Lembar Peer Review Heuristik 2](images/heuristik2.png)
 
 ## 2. Tabel Perbaikan Berdasarkan Peer Review
-| No | Temuan / Masukan Teman | Perbaikan yang Dilakukan | Kode Commit |
-|----|------------------------|---------------------------|-------------|
-| 1. | Contoh: Label pesan error kurang kontras | Menyesuaikan warna dengan fungsi `warnaKesalahan()` FlatLaf | `a1b2c3d` |
+![Tabel Singkat Temuan Teman](images/temuan.png)
 
 ## 3. Tangkapan Layar (Screenshot)
-* **Form dengan Pesan Kesalahan:**
-  *(Sisipkan screenshot form saat ada error)*
-* **Jendela Navigator:**
-  *(Sisipkan screenshot jendela Navigator NetBeans yang memperlihatkan label pesan)*
+### Tangkapan Layar Form dengan Pesan Kesalahan
+![Pesan Kesalahan](images/error-form.png)
+
+### Jendela Navigator
+![Jendela Navigator](images/navigator.png)
 
 ## 4. Jawaban Eksperimen Praktikum 4
 1. **Ketik huruf pada NPM:** Karakter diblok oleh `evt.consume();` di `npmFieldKeyTyped`.
